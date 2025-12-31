@@ -1,4 +1,3 @@
-git config --global alias.gst git status
 git config --global alias.st status
 git config --global alias.di diff
 git config --global alias.co checkout
