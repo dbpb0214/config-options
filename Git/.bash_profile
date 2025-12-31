@@ -1,3 +1,24 @@
+## Bash shortcuts
+alias ll="ls -alG"
+alias l.="ls -d .*"
+
+## Networking aliases
+alias ports_open_i4='lsof -Pn -i4'
+alias ports_open_i6='lsof -Pn -i6'
+alias external_ip='dig +short myip.opendns.com @resolver1.opendns.com'
+alias external_ip_two='curl ifconfig.co'
+alias internal_ip='ipconfig getifaddr en0'
+
+## ip=$(ipconfig getifaddr en0)
+
+alias default_gateway_info='route get default'
+alias default_gateway_ip='netstat -rn | grep default'
+alias check_open_ports='nc -z -v 192.168.1.1 1-65535 2>&1 | grep succeeded'
+alias listening_ports='lsof -i | grep LISTEN'
+alias get_routing_tables='netstat -rn'
+alias get_resolved_routing_tables='netstat -n'
+alias mac_addresses_on_network='arp -a'
+
 git config --global alias.st status
 git config --global alias.di diff
 git config --global alias.co checkout
